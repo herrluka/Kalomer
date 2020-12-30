@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Age_Number_Activity"
+    android:background="@drawable/background_gradient">
+
+    <NumberPicker
+        android:theme="@style/NumberPicker"
+        android:id="@+id/numberPicker"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textSize="100dp"
+         />
+
+    <Button
+        android:id="@+id/AgeNumberButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@+id/numberPicker"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="80dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/first_screen_button"
+
+        android:textColor="#FFFFFFFF" />
+
+    <TextView
+        android:id="@+id/numberOfAgesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unesite broj godina"
+        android:textSize="20dp"
+        android:layout_marginTop="29dp"
+        android:layout_below="@id/numberPicker"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFFFF"/>
+
+
+</RelativeLayout>

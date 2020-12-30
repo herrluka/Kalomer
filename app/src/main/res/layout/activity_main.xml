@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_gradient"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <me.itangqi.waveloadingview.WaveLoadingView
+            android:id="@+id/waveLoadingView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mainConstraintLayout"
+            app:wlv_borderColor="@color/colorPrimary"
+            app:wlv_borderWidth="3dp"
+            app:wlv_progressValue="5"
+            app:wlv_round_rectangle="true"
+            app:wlv_shapeType="circle"
+            app:wlv_titleCenterColor="@android:color/white"
+            app:wlv_titleCenterSize="24sp"
+            app:wlv_triangle_direction="north"
+            app:wlv_waveAmplitude="70"
+            app:wlv_waveColor="@color/colorPrimary" />
+
+        <ImageButton
+            android:id="@+id/addImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/ic_add_white_24dp"
+            app:layout_constraintBottom_toBottomOf="@id/calendarImageView"
+            app:layout_constraintLeft_toRightOf="@+id/waveLoadingView"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/calendarImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/ic_date_range_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/waveLoadingView"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/addImageView" />
+
+        <ImageButton
+            android:id="@+id/statisticsImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/ic_insert_chart_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@id/settingsImageView"
+            app:layout_constraintRight_toLeftOf="@id/waveLoadingView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/settingsImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/ic_settings_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@id/mainConstraintLayout"
+            app:layout_constraintRight_toLeftOf="@id/waveLoadingView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/statisticsImageView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/lastNextDayLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/mainConstraintLayout">
+
+        <TextView
+            android:id="@+id/previousDateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:layout_weight="1"
+            android:text="Prethodni dan"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="#FFFFFFFF"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/nextDayButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Naredni dan"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="#FFFFFFFF"
+            android:background="@drawable/edit_text_border"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/mainListFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_main_list"
+        android:layout_below="@id/lastNextDayLinearLayout"
+        android:name="com.example.kalomer.MainListFragment"/>
+
+<!--    <fragment-->
+<!--        android:id="@+id/mainStatisticsFragment"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/mainConstraintLayout"-->
+<!--        android:name="com.example.kalomer.MainStatisticsFragment"/>-->
+
+
+
+
+</RelativeLayout>

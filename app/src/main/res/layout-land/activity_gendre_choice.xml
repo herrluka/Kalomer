@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GendreChoiceActivity"
+    android:background="@drawable/background_gradient">
+
+    <RadioGroup
+        android:id="@+id/gendreRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="108dp"
+            android:layout_height="166dp"
+            android:buttonTint="@color/colorPrimary"
+            android:checked="true"
+            android:text="Muški"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20dp" />
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/femaleRadioButton"
+        android:text="Ženski"
+        android:textSize="20dp"
+        android:textColor="#FFFFFFFF"
+        android:buttonTint="@color/colorPrimary"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Izaberite pol"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFFFF"
+        />
+
+    <Button
+        android:id="@+id/gendreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gendreRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:text="@string/first_screen_button"
+        android:textColor="#FFFFFFFF" />
+
+</RelativeLayout>
+
+
+
+
+

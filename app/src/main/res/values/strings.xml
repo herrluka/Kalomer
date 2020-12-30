@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kalomer</string>
+    <string name="first_screen_button">Nastavi</string>
+    <string name="number_picker">Picker</string>
+    <string name="number_picker_formatter">%02d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

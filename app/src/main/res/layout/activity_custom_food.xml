@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kalomer.CustomFoodActivity"
+    android:background="@drawable/background_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/customtitleRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+            <TextView
+                android:id="@+id/customTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16dp"
+                android:text="Naslov"
+                />
+            <EditText
+                android:id="@+id/customTitleEditText"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_border"
+                android:textSize="20dp"
+                android:textColor="#FFFFFFFF"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/customTitleTextView"
+                android:maxLength="30"
+                />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/customKcalRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customtitleRelativeLayout"
+        android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/customkcalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16dp"
+                android:text="Kcal"
+                />
+            <EditText
+                android:id="@+id/customKcalEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_border"
+                android:textSize="20dp"
+                android:textColor="#FFFFFFFF"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:maxLength="7"
+                android:inputType="numberDecimal"
+                android:layout_below="@id/customkcalTextView"
+                />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fatCarbProtLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/customKcalRelativeLayout">
+
+        <RelativeLayout
+            android:id="@+id/customCarbsRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/customCarbsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16dp"
+                android:text="Ugljeni hidrati"
+                />
+            <EditText
+                android:id="@+id/customCarbsEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_border"
+                android:textSize="20dp"
+                android:textColor="#FFFFFFFF"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:maxLength="7"
+                android:inputType="numberDecimal"
+                android:layout_below="@id/customCarbsTextView"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/customFatRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/customFatTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16dp"
+                android:text="Masti"
+                />
+            <EditText
+                android:id="@+id/customFatEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_border"
+                android:textSize="20dp"
+                android:textColor="#FFFFFFFF"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:maxLength="7"
+                android:inputType="numberDecimal"
+                android:layout_below="@id/customFatTextView"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/customProteinRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/customProteinTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16dp"
+                android:text="Proteini"
+                />
+
+            <EditText
+                android:id="@+id/customProteinEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customProteinTextView"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/edit_text_border"
+                android:inputType="numberDecimal"
+                android:maxLength="7"
+                android:textAlignment="center"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addIconLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fatCarbProtLinearLayout"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:weightSum="2"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/addIconLayout"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_border"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <ImageView
+                android:id="@+id/chosenIcon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/pie_pic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Dodaj\n nalepnicu"
+                android:textAlignment="center"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/openCategoriesPopupLinearLayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:layout_marginHorizontal="20dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="26dp"
+                    android:text="Kategorija"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/categoryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                android:text="Kategorija"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+            <Button
+                android:id="@+id/finishAddingFoodButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Dodaj"
+                android:textColor="#FFFFFFFF"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/addIconLinearLayout"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="40dp"
+                />
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

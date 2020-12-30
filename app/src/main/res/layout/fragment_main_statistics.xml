@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/dailyProtsCarbsLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Proteini"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_gravity="center"
+                    android:textSize="13dp"/>
+                <ProgressBar
+                    android:id="@+id/dailyProteinsBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:progress="30"
+                    android:layout_gravity="center"
+                    android:progressTint="@android:color/holo_red_dark"
+                    android:progressBackgroundTint="#FFFFFFFF"
+                    android:progressBackgroundTintMode="src_in"/>
+                <TextView
+                    android:id="@+id/belowProteinsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0g"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_gravity="center"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                    android:text="Ugljeni hidrati"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="13dp"/>
+                <ProgressBar
+                    android:id="@+id/dailyCarbsBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:progress="30"
+                    android:progressTint="@android:color/holo_green_dark"
+                    android:progressBackgroundTint="#FFFFFFFF"
+                    android:progressBackgroundTintMode="src_in"/>
+                <TextView
+                    android:id="@+id/belowCarbsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0g"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Masti"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="13dp"/>
+                <ProgressBar
+                    android:id="@+id/dailyFatBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:progress="30"
+                    android:progressTint="@android:color/holo_orange_dark"
+                    android:progressBackgroundTint="@android:color/holo_orange_dark"
+                    android:progressBackgroundTintMode="src_in"/>
+                <TextView
+                    android:id="@+id/belowFatTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0g"
+                    android:textColor="#FFFFFFFF"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </RelativeLayout>

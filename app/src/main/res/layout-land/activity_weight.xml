@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kalomer.WeightActivity"
+    android:background="@drawable/background_gradient"
+    >
+<LinearLayout
+    android:id="@+id/weightLinearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="40dp">
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:backgroundTint="#FFFFFFFF"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:inputType="number"
+        android:maxLength="6"
+
+
+        />
+    <TextView
+        android:id="@+id/kgTexView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kg"
+        android:textSize="30dp"
+        android:textColor="#FFFFFFFF"
+        />
+</LinearLayout>
+    <TextView
+        android:id="@+id/infoWeightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightLinearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Unesite telesnu masu"
+        android:textSize="30dp"
+        android:textColor="#FFFFFFFF"
+        />
+
+    <Button
+        android:id="@+id/weightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoWeightTextView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/first_screen_button"
+        android:textColor="#FFFFFFFF"
+
+        />
+</RelativeLayout>
+
+
+
